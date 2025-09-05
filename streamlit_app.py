@@ -56,7 +56,7 @@ if submit_button and user_input.strip():
             st.error(" Bot failed to respond: " + response.text)
 
     except Exception as e:
-        raise Exception(f"The response failed due to {e}")
+         st.error(f"The response failed due to {e}")
 
 
 import os
@@ -66,6 +66,7 @@ TAVILAY_API_KEY = st.secrets.get("TAVILAY_API_KEY", os.getenv("TAVILAY_API_KEY")
 FOURSQUARE_API_KEY = st.secrets.get("FOURSQUARE_API_KEY", os.getenv("FOURSQUARE_API_KEY"))
 OPENWEATHERMAP_API_KEY = st.secrets.get("OPENWEATHERMAP_API_KEY", os.getenv("OPENWEATHERMAP_API_KEY"))
 EXCHANGE_RATE_API_KEY = st.secrets.get("EXCHANGE_RATE_API_KEY", os.getenv("EXCHANGE_RATE_API_KEY"))
+
 
 
 
