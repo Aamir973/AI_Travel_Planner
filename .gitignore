@@ -1,1 +1,24 @@
-aaads
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+ENV/
+venv/
+
+# Environment variables
+.env
+.env.name
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build folders
+ai_travel_planner.egg-info/
